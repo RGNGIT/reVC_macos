@@ -466,7 +466,8 @@ project "reVC"
 		includedirs { "/opt/local/include" }
 		includedirs {"/opt/homebrew/include" }
 		libdirs { "/opt/local/lib" }
-		libdirs { "/opt/homebrew/lib" }
+		libdirs { "/opt/homebrew/lib" } 
+		files { "vendor/librw/src/gl/glad/glad.c" }
 		
 	filter "platforms:macosx-amd64-*gl3_glfw*"
 		links { "glfw" }
@@ -475,3 +476,4 @@ project "reVC"
 		includedirs {"/usr/local/include" }
 		libdirs { "/opt/local/lib" }
 		libdirs { "/usr/local/lib" }
+		files { "vendor/librw/src/gl/glad/glad.c" }
